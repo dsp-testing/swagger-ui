@@ -1492,3 +1492,7 @@
   outline-color: #cc0000;
   background-color: #f2dede;
 }
+.swagger-section .invoking-location {
+  cursor: pointer;
+  color: #547f00;
+}

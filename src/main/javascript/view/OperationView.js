@@ -246,6 +246,16 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
       param = ref4[p];
       this.addParameter(param, contentTypeModel.consumes);
     }
+
+    /*adding invoking view to support dianwoda, linguang*/
+    var invokingView = new SwaggerUi.Views.InvokingView({
+      model: this.model.invoking,
+      tagName: 'tr'
+    });
+
+    $('.invoking-info', $(this.el)).append(invokingView.render().el);
+
+
     ref5 = this.model.responseMessages;
     for (q = 0, len4 = ref5.length; q < len4; q++) {
       statusCode = ref5[q];

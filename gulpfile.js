@@ -146,7 +146,8 @@ gulp.task('watch', ['copy-local-specs'], function() {
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
-    livereload: true
+    livereload: true,
+    port: 8099
   });
 });
 

@@ -79,6 +79,21 @@
           </tbody>
           </table>
           {{/if}}
+          {{#if invoking.length}}
+          <h4 data-sw-translate>Invoking</h4>
+          <table class='fullwidth invoking'>
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate>description</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate>file</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate>location</th>
+            </tr>
+          </thead>
+          <tbody class="invoking-info">
+
+          </tbody>
+          </table>
+          {{/if}}
           {{#if responseMessages}}
           <div style='margin:0;padding:0;display:inline'></div>
           <h4 data-sw-translate>Response Messages</h4>
