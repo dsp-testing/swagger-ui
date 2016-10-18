@@ -117,13 +117,17 @@ templates['content_type'] = template({"1":function(container,depth0,helpers,part
 templates['invoking'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
 
-  return "<td width='15%'>"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\r\n<td width='15%' class='invoking-file'>"
+  return "<td width='10%' class='invoking-project'>"
+    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.project : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
+    + "</td>\n<td width='20%' class='invoking-file'>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.file : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\r\n<td width='15%' class='invoking-location'>"
+    + "</td>\n<td width='10%' class='invoking-version'>"
+    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.version : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
+    + "</td>\n<td width='20%' class='invoking-location'>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.location : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\r\n";
+    + "</td>\n<td width='30%'>"
+    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
+    + "</td>\n";
 },"useData":true});
 templates['main'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
@@ -304,7 +308,7 @@ templates['operation'] = template({"1":function(container,depth0,helpers,partial
 },"15":function(container,depth0,helpers,partials,data) {
     return "          <h4 data-sw-translate>Parameters</h4>\n          <table class='fullwidth parameters'>\n          <thead>\n            <tr>\n            <th style=\"width: 100px; max-width: 100px\" data-sw-translate>Parameter</th>\n            <th style=\"width: 310px; max-width: 310px\" data-sw-translate>Value</th>\n            <th style=\"width: 200px; max-width: 200px\" data-sw-translate>Description</th>\n            <th style=\"width: 100px; max-width: 100px\" data-sw-translate>Parameter Type</th>\n            <th style=\"width: 220px; max-width: 230px\" data-sw-translate>Data Type</th>\n            </tr>\n          </thead>\n          <tbody class=\"operation-params\">\n\n          </tbody>\n          </table>\n";
 },"17":function(container,depth0,helpers,partials,data) {
-    return "          <h4 data-sw-translate>Invoking</h4>\n          <table class='fullwidth invoking'>\n          <thead>\n            <tr>\n            <th style=\"width: 100px; max-width: 100px\" data-sw-translate>description</th>\n            <th style=\"width: 310px; max-width: 310px\" data-sw-translate>file</th>\n            <th style=\"width: 310px; max-width: 310px\" data-sw-translate>location</th>\n            </tr>\n          </thead>\n          <tbody class=\"invoking-info\">\n\n          </tbody>\n          </table>\n";
+    return "          <h4 data-sw-translate>Invoking</h4>\n          <table class='fullwidth invoking'>\n          <thead>\n            <tr>\n            <th style=\"width: 100px; max-width: 100px\" data-sw-translate>project</th>\n            <th style=\"width: 200px; max-width: 200px\" data-sw-translate>file</th>\n            <th style=\"width: 100px; max-width: 100px\" data-sw-translate>version</th>\n            <th style=\"width: 210px; max-width: 310px\" data-sw-translate>location</th>\n            <th style=\"width: 310px; max-width: 310px\" data-sw-translate>description</th>\n            </tr>\n          </thead>\n          <tbody class=\"invoking-info\">\n\n          </tbody>\n          </table>\n";
 },"19":function(container,depth0,helpers,partials,data) {
     return "          <div style='margin:0;padding:0;display:inline'></div>\n          <h4 data-sw-translate>Response Messages</h4>\n          <table class='fullwidth response-messages'>\n            <thead>\n            <tr>\n              <th data-sw-translate>HTTP Status Code</th>\n              <th data-sw-translate>Reason</th>\n              <th data-sw-translate>Response Model</th>\n              <th data-sw-translate>Headers</th>\n            </tr>\n            </thead>\n            <tbody class=\"operation-status\">\n            </tbody>\n          </table>\n";
 },"21":function(container,depth0,helpers,partials,data) {

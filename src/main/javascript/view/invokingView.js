@@ -18,7 +18,9 @@ SwaggerUi.Views.InvokingView = Backbone.View.extend({
 
     if ($('.invoking-file').html() !== '#') {
       /*this invoking is external file*/
-      newUrl = 'http://192.168.56.101:8099/' + '?url=' + $('.invoking-file').html() + '#!/' + $('.invoking-location').html();
+      var invokingFile = $('.invoking-project').html() + '/' + $('.invoking-file').html().split('.')[0] + '/' + $('.invoking-file').html().split('.')[0] + '-' + $('.invoking-version').html() + '.' + $('.invoking-file').html().split('.')[1];
+
+      newUrl = 'http://192.168.56.101:5000/' + '?url=specs/' + invokingFile + '#!/' + $('.invoking-location').html();
       window.open(newUrl);
     } else {
       newHashVal = '#!/' + $('.invoking-location').html();

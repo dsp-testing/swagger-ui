@@ -49,5 +49,7 @@ paths:
         required: true
       invoking:
       - file: default.yaml
+        project: batman
+        version: v0.1
         location: Estimates/get_estimates_price
         description: 该接口调用另外一个接口来验证身份
